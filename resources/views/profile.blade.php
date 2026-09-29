@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>profile</title>
-</head>
-<body>
+@extends('layouts.main')
+
+@section('content')
     <h1>HALAMAN PROFILE</h1>
-    <p>
-        Nama : Ann <br>
-        Prodi : TI 
-    </p>
-    <script src="js/alert.js"></script>
-</body>
-</html>
+    <p>Nama  : {{ $name }} </p>
+    <p>NIM   : {{ $nim }}</p>
+    <p>Prodi : {{ $prodi }} <p>
+   <script src="{{ asset('js/alert.js') }}"></script>
+@endsection
