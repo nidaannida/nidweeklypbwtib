@@ -1,24 +1,16 @@
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-3">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">WEB TI</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">WEB | TI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/berita">Berita</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/profile">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/kontak">Kontak</a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link {{ ($title === 'home' ? 'active' : '')}}" aria-current="page" href="/">Home</a>
+        <a class="nav-link {{ ($title === 'berita' ? 'active' : '')}}" href="/berita">Berita</a>
+        <a class="nav-link {{ ($title === 'profile' ? 'active' : '')}}" href="/profile">Profile</a>
+        <a class="nav-link {{ ($title === 'contact' ? 'active' : '')}}" href="/contact">Contact</a>
+      </div>
     </div>
   </div>
 </nav>
